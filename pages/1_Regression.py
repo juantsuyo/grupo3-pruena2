@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 #import pyautogui
 
 
-st.set_page_config(page_title="Regression", page_icon=":material/thumb_up:")
+st.set_page_config(page_title="Regression", page_icon=":material/thumb_up:", initial_sidebar_state="expanded")
 
 
 @st.cache_data

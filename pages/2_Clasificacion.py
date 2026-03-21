@@ -5,7 +5,7 @@ import base64
 
 from joblib import load
 
-st.set_page_config(page_title="Clasificacion", page_icon=":trophy:")
+st.set_page_config(page_title="Clasificacion", page_icon=":trophy:", initial_sidebar_state="expanded")
 
 @st.cache_data
 def get_base64_of_bin_file(png_file):
