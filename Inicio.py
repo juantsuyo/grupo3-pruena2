@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="GRUPO 3: MACHINE LEARNING EN PRODUCCIÓN DESPLIEGUE WEB", page_icon=":streamlit:")
+st.set_page_config(page_title="GRUPO 3: MACHINE LEARNING EN PRODUCCIÓN DESPLIEGUE WEB", page_icon=":streamlit:", initial_sidebar_state="expanded")
 
-st.sidebar.image("files/images1.png",use_column_width='always')
+st.sidebar.image("files/images1.png",width='stretch')
 st.sidebar.header("GRUPO 3")
 
 st.markdown(
