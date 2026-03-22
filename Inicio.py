@@ -46,7 +46,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('<h1 class="custom-title" style="color:white">GRUPO 3<br>MACHINE LEARNING EN PRODUCCIÓN DESPLIEGUE WEB</h1>', unsafe_allow_html=True)
+st.markdown("<h3 style='text-align:center;'>2026-G1-612491<br>MACHINE LEARNING EN PRODUCCIÓN - DESPLIEGUE WEB</h3>", unsafe_allow_html=True)
+st.markdown('<h3 class="custom-title" style="color:white">GRUPO 3<br>MACHINE LEARNING EN PRODUCCIÓN DESPLIEGUE WEB</h3>', unsafe_allow_html=True)
 st.html("<br>")
 
 col1, col2, col3 = st.columns(3)
@@ -64,7 +65,7 @@ with col3:
 
 st.divider()
 
-st.title("Integrantes del Grupo:")
+st.markdown("<h3 style='text-align:center;'>Integrantes del Grupo:</h3>", unsafe_allow_html=True)
 
 col4, col5 = st.columns(2)
 
