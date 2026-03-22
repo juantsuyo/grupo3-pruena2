@@ -91,23 +91,36 @@ with col2:
     st.markdown("<div style='display:flex; align-items: flex-end;'><h3>Horas de Trabajo</h3>&nbsp;&nbsp;<h5>(Min=0, Max=112)</h5></div>", unsafe_allow_html=True)    
     field_horas_trabajo = st.number_input("**horas_trabajo (Min=0, Max=112)**", min_value=0, value=int(field_horas_trabajo), label_visibility="collapsed")
 
-st.sidebar.markdown("<div style='display:flex; align-items: flex-end;'><h3>Nro. de Personas por trabajo</h3>&nbsp;&nbsp;<h5>(Min=1, Max=31)</h5></div>", unsafe_allow_html=True)    
-field_nro_personas_trabajo = st.sidebar.number_input("**nro_personas_trabajo (Min=1, Max=31)**", min_value=1, value=int(field_nro_personas_trabajo), label_visibility="collapsed")
+
+colA, colB, colC = st.sidebar.columns([1,3,1])
+with colA:
+    pass
+with colB:
+    st.markdown("<div style='display:flex; align-items: flex-end;'><h3>Nro. de Personas por trabajo</h3>&nbsp;&nbsp;<h5>(Min=1, Max=31)</h5></div>", unsafe_allow_html=True)    
+    field_nro_personas_trabajo = st.number_input("**nro_personas_trabajo (Min=1, Max=31)**", min_value=1, value=int(field_nro_personas_trabajo), label_visibility="collapsed")
+with colC:
+    pass
 
 
 col3, col4 = st.sidebar.columns([1,1])
-
-with col3:
-    
+with col3:    
     st.markdown("<h3>Sexo</h3>", unsafe_allow_html=True)
-    field_select_sexo = st.selectbox("Select Sexo", ["Masculino", "Femenino"], index=["Masculino", "Femenino"].index(field_select_sexo), label_visibility="collapsed")
-    
+    field_select_sexo = st.selectbox("Select Sexo", ["Masculino", "Femenino"], index=["Masculino", "Femenino"].index(field_select_sexo), label_visibility="collapsed")    
+with col4:    
     st.markdown("<h3>Nivel Educativo</h3>", unsafe_allow_html=True)
     field_select_NIVELI = st.selectbox("Select Nivel Educativo", ["Primaria", "Secundaria", "Superior"], index=["Primaria", "Secundaria", "Superior"].index(field_select_NIVELI), label_visibility="collapsed")
 
-with col4:    
+
+colD, colE, colF = st.sidebar.columns([1,3,1])
+with colD:
+    pass
+with colE:
     st.markdown("<h3>Situación de Informalidad</h3>", unsafe_allow_html=True)
     field_select_Informal_P = st.selectbox("Select Situación de Informalidad", ["Empleo Formal", "Empleo Informal"], index=["Empleo Formal", "Empleo Informal"].index(field_select_Informal_P), label_visibility="collapsed")
+with colF:
+    pass
+
+
 
 
 # Función para resetear las entradas
