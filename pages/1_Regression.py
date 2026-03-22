@@ -72,7 +72,10 @@ field_select_NIVELI = 'Primaria'
 field_select_Informal_P = 'Empleo Formal'
 
 # Streamlit app
-st.title("Determinantes socioeconómicos del ingreso laboral en trabajadores independientes de la ciudad de Cajamarca, 2024")
+st.markdown("<h2 style='text-align:center;'>Determinantes socioeconómicos del ingreso laboral en trabajadores independientes de la ciudad de Cajamarca, 2024</h2>", unsafe_allow_html=True)
+#st.title("")
+
+st.divider()
 st.markdown("###### Esta aplicación utiliza el modelo de Random Forest para la prediccion.")
 
 # Sidebar para la entrada del usuario
